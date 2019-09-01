@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Otavio's palace</title>
+    </head>
+    <script>
+        {% block scripts_main %}
+        {% endblock %}
+    </script>
+    <body>
+        <div id="content">
+            {% block content %}
+            <span>Something should be here</span>
+            {% endblock %}
+        </div>
+        <div id="sidebar">
+            {% block sidebar %}
+            <span class='button'>Hit one</span>
+            {% endblock %}
+        </div>
+    </body>
+</html>

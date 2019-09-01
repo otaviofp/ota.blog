@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for account in accounts: %}
+<div class='account'>
+    {% 
+        if account.is_investment: 
+            include "investment_account.html"
+        else:
+            include "regular_account.html"
+    %}
+
+<span></span>
+</div>
+{% endfor %}
+{% endblock %}

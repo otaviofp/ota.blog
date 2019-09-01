@@ -1,0 +1,7 @@
+{% extends "regular_account.html" %}
+
+{% for position in account.positions: %}
+<span class='position-detail'>
+<span>Name: {{ position.symbol }}</span>
+</span>
+{% endfor %}
